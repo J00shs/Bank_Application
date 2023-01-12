@@ -6,6 +6,8 @@ import java.util.UUID;
 
 public class Client {
     private final UUID id;
+
+//    @NotBlank
     private final String name;
 
 //@JsonProperty allows clients to be added to the database in Postman. Use body->raw->Select Json on the dropdown menu

@@ -3,6 +3,7 @@ package com.joshua.BankApplication.dao;
 import com.joshua.BankApplication.model.Client;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public interface ClientDao {
@@ -16,4 +17,9 @@ public interface ClientDao {
     }
 
     List<Client> selectAllClient();
+
+    Optional<Client> selectClientByID(UUID id);
+    int deleteClientById(UUID id);
+
+    int updateClientByID(UUID id, Client client);
 }
